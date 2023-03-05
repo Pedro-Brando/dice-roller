@@ -27,6 +27,9 @@ function Rolld(lados){
 
 }
 
+function resetResultados() {
+  document.getElementById("historico").value = "";
+}
 
 function bigImg(x) {
   x.style.height = "10rem";
