@@ -2,10 +2,11 @@ var historicoRolagens = [];
 
 function Rolld(lados){
 
-  //rolar os dados, limpar o crítico
+  //"limpar" a rolagem anterior
   document.getElementById("crit").style.opacity=0;
   var resTotal = 0;
 
+  //rolar o dado
   var jogada = 1 + Math.floor(Math.random()*lados);
   resTotal = jogada;
 
