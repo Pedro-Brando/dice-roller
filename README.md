@@ -1,7 +1,7 @@
 # dice-roller
 Rolador de dados feito em Javascript.
 <br>
-Para execução, apenas abra o arquivo Index.html em seu navegador.
+Para execução, acesse o site https://pedro-brando.github.io/dice-roller/ ou baixe os arquivos localmente e abra o Index.html em seu navegador.
 <br>
 Funcionalidades:
 -	Alternar entre modelos de dados diferentes;
