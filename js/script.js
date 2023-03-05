@@ -2,7 +2,8 @@ var historicoRolagens = [];
 
 function Rolld(lados){
 
-  //rolar os dados
+  //rolar os dados, limpar o crítico
+  document.getElementById("crit").style.opacity=0;
   var resTotal = 0;
 
   var jogada = 1 + Math.floor(Math.random()*lados);
@@ -18,15 +19,17 @@ function Rolld(lados){
 
   
   if (resTotal == lados){
-    document.getElementById("crit").style.opacity=1;
-  } else {
-    document.getElementById("crit").style.opacity=0;
-  }
+    crit();
+}
+}
 
+function crit(){
+  document.getElementById("crit").style.opacity=1;
 }
 
 function resetResultados() {
   document.getElementById("historico").innerHTML = "";
+  document.getElementById("crit").style.opacity=0;
 }
 
 function bigImg(x) {
