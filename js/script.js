@@ -9,8 +9,6 @@ function Rolld(lados){
   resTotal = jogada;
 
   historicoRolagens.push(" ( D" + lados + " => " + resTotal + " )");
-  //historicoRolagens.push("d"+lados + ": " + resTotal + "!, ");
-  
   
   var resultadoAtual = document.getElementById("placeholder");
   resultadoAtual.innerHTML = resTotal;
@@ -28,7 +26,7 @@ function Rolld(lados){
 }
 
 function resetResultados() {
-  document.getElementById("historico").value = "";
+  document.getElementById("historico").innerHTML = "";
 }
 
 function bigImg(x) {
