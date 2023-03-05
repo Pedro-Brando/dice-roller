@@ -1,0 +1,48 @@
+*{
+  font-family: Helvetica;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  position: relative;
+}
+
+#imagem{
+  width: 10rem;
+  height: 10rem;
+}
+
+#placeholder {
+  height: 10rem;
+  width: 10rem;
+  padding: 3rem;
+  margin: 10rem;
+  border: 0.5rem solid black;
+  border-radius: 1rem;  
+  font-size:3rem;
+  float: right;
+}
+
+#dado{
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+#crit{
+  opacity: 0;
+  position: fixed;
+  display: block;
+  width: 15%;
+  margin-left: 20rem;
+}

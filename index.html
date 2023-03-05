@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dice Roller</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/script.js"></script>
+  </head>
+  
+  <header>
+    <img id="imagem" src="img/dice-fire.png"/>
+    <h1>Rolador de dados do Pedro</h1>
+    <img id="imagem" src="img/dice-shield.png"/>
+  </header>
+  
+  <body>
+  <div>
+      <h2> Selecione o dado para rolar: </h2>
+      <p id="placeholder"> </p>
+      <img id="crit" src="img/crit.png">
+    <br> 
+      <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" id="dado" src="img/d20.png" onclick="Rolld(20);"/> 
+      <br>
+      <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" id="dado" src="img/d12.png" onclick="Rolld(12);"/> 
+      <br>
+      <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" id="dado" src="img/d10.png" onclick="Rolld(10);"/> 
+      <br>
+      <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" id="dado" src="img/d8.png" onclick="Rolld(8);"/> 
+      <br>
+      <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" id="dado" src="img/d4.png" onclick="Rolld(4);"/> 
+  </div>
+  <br>
+  <div>
+    <h2>Histórico</h2>
+    <p id="historico"></p>
+  </div>
+    <p id="resultados"></p>
+    <input type="button" value="Limpar" onclick="resetResultados()">
+  </body>
+</html>
